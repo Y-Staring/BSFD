@@ -1,5 +1,5 @@
-## Fast Discovery of Functional Dependencies
-via Bayesian Network Learning
+## Fast Discovery of Functional Dependencies via Bayesian Network Learning
+
 
 > Under this project, implementations are provided for the representative sampling method,  the correlated attribute extraction method, the search space construction algorithm SubLearner,  the parallel discovery method PFMiner, as well as code for testing precision and recall, involving corresponding implementation algorithms.
 

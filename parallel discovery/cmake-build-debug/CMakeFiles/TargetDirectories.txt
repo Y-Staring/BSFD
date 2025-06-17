@@ -1,0 +1,6 @@
+/home/yangsiyi10504/share/share/cmake-build-debug/CMakeFiles/intrinsics_gen.dir
+/home/yangsiyi10504/share/share/cmake-build-debug/CMakeFiles/omp_gen.dir
+/home/yangsiyi10504/share/share/cmake-build-debug/CMakeFiles/acc_gen.dir
+/home/yangsiyi10504/share/share/cmake-build-debug/CMakeFiles/SCFDM_part.dir
+/home/yangsiyi10504/share/share/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yangsiyi10504/share/share/cmake-build-debug/CMakeFiles/rebuild_cache.dir

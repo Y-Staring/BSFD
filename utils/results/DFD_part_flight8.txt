@@ -1,0 +1,17 @@
+AirlineID -> Month
+AirlineID -> Quarter
+AirlineID -> UniqueCarrier
+AirlineID -> Year
+DayOfWeek -> Month
+DayOfWeek -> Quarter
+DayOfWeek -> Year
+Month -> Quarter
+Month -> Year
+Quarter -> Month
+Quarter -> Year
+UniqueCarrier -> AirlineID
+UniqueCarrier -> Month
+UniqueCarrier -> Quarter
+UniqueCarrier -> Year
+Year -> Month
+Year -> Quarter

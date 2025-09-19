@@ -201,7 +201,6 @@ int main() {
         std::cout << "Total execution time: " << total_time - start << "s" << std::endl;
         //std::set<std::pair<std::string, std::string>> globalFD;
 
-        // (a) 先把自己进程的 localFD 插进去
         //for (auto &fd : allFD) {
         //    globalFD.insert(fd);
         //}
@@ -261,4 +260,3 @@ int main() {
 //        std::cout << "The total execution time is:" << float(end - start) << "s" << std::endl;
 //        return 0;
 //}
-

@@ -24,5 +24,6 @@ Specifically, the folder divisions are as follows:
 > 2. The `sample` folder implements corresponding algorithms for a stratified sample.
 > 3. The `search space reduction` implements correlated attributes extraction, sub-table partition(per-node) ,  the global BN variant(all_node), and reduced search space ratio calculation.
 > 4. The `parallel discovery` folder implements parallel discovery across multiple sub-tables.
+> 4. The `exps` folder implements noise injection to datasets.
 > 5. The `datasets` folder provides synthetic data and variants of real-life data for scalability tests. And a clean version of real-life data and corresponding sub-tables under each experiment setting.
 > 6. The `utils` folder contains implementations of precision and recall calculation, network scoring, data synthetic methods, and example results.

@@ -108,7 +108,7 @@ def inject_noise(csv_path, fds_path, out_csv, out_log, gamma, seed=42):
     # Select attributes that appear in the FD list and also exist in the schema header
     all_fd_attrs = [c for c in parse_fd_attrs_with_schema(fd_lines, schema_cols) if c in schema_cols]
     if not all_fd_attrs:
-        print(f"[WARN] {csv_path} 的 FD 未与表头匹配到任何列，跳过。")
+        print(f"[WARN] {csv_path} no match cols")
         return
 
     # Choose target columns: 50% of matched FD attributes (at least 1)
@@ -128,7 +128,7 @@ def inject_noise(csv_path, fds_path, out_csv, out_log, gamma, seed=42):
 
     total_candidates = len(candidates)
     if total_candidates == 0:
-        print(f"[WARN] {csv_path} 目标列中无可翻转的非空单元格，跳过。")
+        print(f"[WARN] {csv_path} no match cells")
         return
 
     # Number of cells to flip ≈ gamma * total_candidates
@@ -203,10 +203,6 @@ def inject_noise(csv_path, fds_path, out_csv, out_log, gamma, seed=42):
     affected_rows = len({row for (row, _) in to_flip})
 
     print(f"[DONE] {csv_path}")
-    print(f"  FD列总数: {len(all_fd_attrs)} | 选中目标列: {len(target_attrs)} -> {target_attrs}")
-    print(f"  候选cell(目标列非空): {total_candidates} | gamma={gamma:.3f} | 计划翻转: {n_flip}")
-    print(f"  实际成功替换(与原值不同): {effective_flips} | 受影响行数: {affected_rows}")
-    print(f"  模式: 域外固定池替换(out-of-domain, pool_size={NOISE_POOL_SIZE})")  # >>> CHANGED
 
 
 # Batch runner
